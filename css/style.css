@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Joti+One|Kavivanar|Open+Sans|Supermercado+One');
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|Sigmar+One');
+
+body {
+    background-image: url("../images/backis.jpg");
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+
+nav {
+    background-color: rgba(60, 60, 60, 0.74);
+    height: 63px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 9998;
+}
+
+h1 {
+    color:#DFCF99;
+    font-family: 'Sigmar One', cursive;
+    text-align: center;
+}
+h3 {
+    font-family: 'Fugaz One', cursive;
+    color: #c0a16b;
+}
+
+select {
+    border: #c0a16b 1px solid;
+    background-color: #3c3c3c;
+    padding: 5px;
+    color: white;
+}
+
+.container {
+    margin: auto;
+    min-width:1080px;
+}
+
+#content {
+    margin-top:100px;
+    background-color: rgba(60,60,60,0.75);
+    min-height: 500px;
+    padding:30px;
+}
+.banner {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    vertical-align: 50px;
+}
+
+.bannerLi{
+    font-family: 'Joti One', cursive;
+    font-size: 16px;
+    list-style: none;
+    display: inline;
+}
+
+.bannerLi a {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+}
+.bannerLi a:hover {
+    color:#DFCF99;
+}
+
+.navi {
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.logo {
+    margin-top: -100px;
+}
+
+.newchtxt{
+    color: #DFCF99 ;
+    font-size: 16px;
+    font-family: 'Verdana', sans-serif ;
+}
+
+.radio-txt {
+    color: #DFCF99 ;
+    font-size: 13px;
+    font-family: 'Verdana', sans-serif ;
+}
+
+.newcpage{
+    width:100%;
+}
+.leftsidenc {
+    float:left;
+    width:20%;
+}
+
+.middleboxes {
+    float:left;
+    width:20%;
+    margin-top: 54px;
+
+}
+
+.rightsidenc {
+    float: right;
+  width:60%;
+    text-align: center;
+    margin-left: -30px;
+
+}
+
+#foot {
+    clear: both;
+}
+
+.charname {
+color: #DFCF99;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.inputGrooup {
+border: #c0a16b 1px solid;
+    background-color: #3c3c3c;
+    padding: 5px;
+    color: white;
+}
+
+.buttonCh {
+    background-color: #471304;
+    border: #DFCF99 2px solid;
+    border-radius: 12px;
+
+}
+
+.btnTxt {
+    color:#DFCF99;
+    font-size: 20px;
+    font-family: 'Joti One', cursive;
+}
+
+.btnTxt:hover {
+    text-decoration: none;
+    color:#c0a16b ;
+}
+
+.lstTxt {
+    color:#DFCF99;
+    font-size: 20px;
+    font-family: 'Joti One', cursive;
+    padding-top: 10px;
+    padding-left: 12px;
+}
+
+.arrowLink {
+    color:#DFCF99;
+    font-size: 30px;
+}
+
+a:hover {
+    text-decoration: none;
+    color:#c0a16b;
+}
+
+.characterList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.characterListTemp{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.checkForRight {
+    color:#c0a16b;
+    font-size: 50px;
+    display:none;
+}
+.checkForWrong {
+    color: #761c19;
+    font-size: 50px;
+    display:none;
+}
+
+#rightName, #wrongName {
+    margin-top: 20px;
+}
+
+
+/*
+MORE
+ */
+
+.se-pre-load {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../images/poeanimate.gif") center no-repeat #3c3c3c;
+}
+
+.arrowLink:hover {
+    transform: translate(0, -5px);
+}
+
+/*
+Hide options
+ */
+
+#saveCharacterBtn {
+    display: none;
+}

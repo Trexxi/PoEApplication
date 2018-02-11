@@ -1,0 +1,64 @@
+<div class="newcpage">
+<div class="leftsidenc">
+<form id="newForm">
+    <a href="#!characters" class="arrowLink"> <i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+    <p class="newchtxt">Name:</p>
+    <input type="text" class ="inputGrooup" name="charactername" ng-model="charname"
+           placeholder=" e.g Ledsen Triangel" maxlength="23"  id="charName">
+
+    <br>
+    <br>
+   <p class="newchtxt"> Ascendency: </p>
+    <select name="ascendency" ng-model="ascendency" ng-change="ShowSelected(ascendency)" >
+        <option value="slayer">Slayer</option>
+        <option value="gladiator">Gladiator</option>
+        <option value="champion">Champion</option>
+        <option value="assassin">Assassin</option>
+        <option value="saboteur">Saboteur</option>
+        <option value="trickster">Trickster</option>
+        <option value="juggernaut">Juggernaut</option>
+        <option value="chieftain">Chieftain</option>
+        <option value="necromancer">Necromancer</option>
+        <option value="elementalist">Elementalist</option>
+        <option value="occultist">Occultist</option>
+        <option value="deadeye">Deadeye</option>
+        <option value="raider">Raider</option>
+        <option value="pathfinder">Pathfinder</option>
+        <option value="inquisitor">Inquisitor</option>
+        <option value="hierophant">Hierophant</option>
+        <option value="guardian">Guardian</option>
+        <option value="ascendant">Ascendant</option>
+    </select>
+
+    <br>
+    <br>
+    <p class="newchtxt">Skill:</p>
+    <input type="text" class="inputGrooup" name="skill" ng-model="skill" placeholder=" e.g Molten Strike" id="skillName"><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button  class="buttonCh" id="saveCharacterBtn"><a href="#!characters" class="btnTxt" id="saveBtnLink">Save character</a></button>
+    <br>
+    <br>
+</form>
+</div>
+    <div class="middleboxes">
+       <!--- <span class="checkForRight" id="rightName"><li class="fa fa-check"></li></span>
+        <span class="checkForWrong" id="wrongName"><i class="fa fa-times"></i></span>
+        <br>
+        <span class="checkForRight" id="rightForAscendy"><li class="fa fa-check"></li></span>-->
+    </div>
+<div class ="rightsidenc">
+    <div>
+        <br>
+        <img class="imgAsc" src="/PoeApplication/images/ascendy_.png" ng-src="/PoEApplication/images/ascendy_{{ ascendency }}.png"/>
+        <h2 class="charname"> {{ charname }} </h2>
+        <h3 class="charname">{{ skill }}</h3>
+</div>
+</div>
+</div>
+
+</div>
+
+</form>
